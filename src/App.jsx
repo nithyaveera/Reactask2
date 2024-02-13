@@ -7,7 +7,7 @@ import Foodercomp from './components/Foodercomp';
 const App = () => {
   let [cartcount, setCartCount] = useState(0)
   let cartData = [{
-    img: "./img/walnu.png",
+    img: "./img/walnut.png",
     name: "Walnuts",
     gram: "100gms",
     price: "₹180"
