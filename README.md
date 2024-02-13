@@ -1,6 +1,6 @@
 # Shopping Cart Task
 
-`Front-end Deployed URL` => 
+`Front-end Deployed URL` => https://react-shoppingcart-task.netlify.app/
 
 + technology used
   - HTML
