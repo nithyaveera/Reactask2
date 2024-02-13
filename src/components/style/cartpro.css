@@ -1,0 +1,21 @@
+.card{
+    position: relative;
+
+}
+#sale{
+    position:absolute;
+    top:2%;
+    left:80%;
+    span{background-color: #212529;
+    color: white;
+ padding: 2px 7px;
+border-radius: 8px;} 
+    
+}
+#saleprice{
+    text-decoration: line-through;
+}
+.card-body{
+    text-align: center;
+}
+

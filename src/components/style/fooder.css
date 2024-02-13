@@ -1,0 +1,8 @@
+.fooder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    background-color:#212529 ;
+    color: white;
+}
