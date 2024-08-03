@@ -17,7 +17,7 @@ const CartItem = ({ item, index, removeCart, quantity, setCartCount}) => {
                         <div className="card-body">
                             <h4 className="card-title">{item.name}</h4>
                             <p className="card-text">{item.gram}</p>
-                            <p>Price:  <span id="saleprice">{item.price}</span> {item.dropprice}</p>
+                            <p>Price: {item.dropprice ? item.dropprice : item.price}</p>
                             <p>Quantity: {quantity}</p>
                             <button className='btn btn-outline-secondary shadow' onClick={remove}>Remove</button>
                         </div>
