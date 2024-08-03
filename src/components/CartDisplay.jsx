@@ -34,7 +34,7 @@ const CartDisplay = ({ cart,removeCart,setCartCount}) => {
                     )
             )}
             < div className='cartfooder'>
-                <div className='box mx-auto pt-3' style={{width:"30%"}}>
+                <div className='box mx-auto p-2' >
                     <h5>Total Price :₹{totalprice}</h5>
                     <button className='btn btn-primary' onClick={gohome}>Back Home</button>
                 </div>

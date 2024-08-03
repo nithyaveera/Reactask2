@@ -23,8 +23,8 @@
     position:sticky;
     bottom: 0vh !important;
     z-index: 3;
-      
-    height:10vh;
+ 
+    height:10%;
     background-color:#303438 ;
     color: white;
     span{
@@ -37,4 +37,9 @@
 display: flex;
 justify-content: space-around;
 align-items: center;
+}
+@media screen and (min-width:700px){
+    .box{
+      width:50%;
+    }
 }
