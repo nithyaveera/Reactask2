@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import './style/cartpro.css'
 
-const Cartpro = ({ item, index, setCartCount }) => {
+const Cartpro = ({ item, index, setCartCount, addToCart, removeFromCart }) => {
     let [status, setStatus] = useState(true)
     let addcart = () => {
         setStatus(false)
         setCartCount((pval) => pval + 1)
-    }
+        addToCart(item)
+    }  
     let removecart = () => {
         setStatus(true)
         setCartCount((pval) => pval - 1)
+        removeFromCart(item.id)
     }
     return (
         <div key={index} class="col-md-3 pt-4 mt-4 mb-3">
@@ -18,7 +20,8 @@ const Cartpro = ({ item, index, setCartCount }) => {
                 <img src={item.img} class="card-img-top productimg" alt="..." />
                 <div class="card-body">
                     <h5 class="card-title">{item.name}</h5>
-                    {item.sales ? <p class="card-text">{item.gram} : <span id="saleprice">{item.price}</span> {item.dropprice}</p> : <p class="card-text">{item.gram} : {item.price}</p>}               {index == 1 || index == 3 || index == 6 || index == 7 ? <p><i class="fa-sharp fa-solid fa-star" style={{ color: "#FFD43B" }}></i>
+                    {item.sales ? <p class="card-text">{item.gram} : <span id="saleprice">{item.price}</span> {item.dropprice}</p> : <p class="card-text">{item.gram} : {item.price}</p>}
+                    {index == 1 || index == 3 || index == 6 || index == 7 || index == 10 || index == 15 || index == 20 || index == 12 || index == 18 ? <p><i class="fa-sharp fa-solid fa-star" style={{ color: "#FFD43B" }}></i>
                         <i class="fa-sharp fa-solid fa-star" style={{ color: "#FFD43B" }}></i>
                         <i class="fa-sharp fa-solid fa-star" style={{ color: "#FFD43B" }}></i>
                         <i class="fa-sharp fa-solid fa-star" style={{ color: "#FFD43B" }}></i>

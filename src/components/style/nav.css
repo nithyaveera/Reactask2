@@ -1,6 +1,6 @@
 #count{
-    background-color: #212529;
-    color: white;
+    background-color:gray;
+    color:whitesmoke;
     padding: 2px 8px;
     border-radius: 15px;
     font-weight: 600;
@@ -8,6 +8,8 @@
 .title{
     margin-right:5%;
     font-size:x-large;
+    color:whitesmoke;
+    font-weight: 700;
 }
 .container{
     padding: 6px;
@@ -16,4 +18,18 @@
     position:sticky;
     top:0vh;
     z-index: 1;
+    background-color:#3b191f;
+}
+.nav-link{
+    color: whitesmoke ;
+    font-weight: 600;
+}
+.nav-link:hover{
+    font-weight: 800;
+}
+.nav-link:visited{
+    color: wheat;
+}
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28255, 255, 255, 1%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
 }
